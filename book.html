@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking - Barber Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<style>
+    body {
+        font-family: 'Lato', Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #000;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+    }
+    .header img {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        height: 60px;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #000;
+        padding: 10px 0;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    nav a:hover {
+        background-color: #000000;
+        transition: background-color 0.5s ease-in-out;
+    }
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .social-media-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .social-media-list li {
+        margin: 10px;
+      }
+        
+      .social-media-list a {
+        color: #000000;
+        text-decoration: none;
+      }
+      
+      .social-media-list a:hover {
+        color: #000;
+      }
+      
+      .social-media-list i {
+        font-size: 24px;
+      }
+
+      .cta {
+        background-color: #000;
+        color: #fff;
+        border-radius: 25px;
+        padding: 20px;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      
+      .cta input[type="email"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 70%;
+        font-size: 16px;
+      }
+      
+      .cta button[type="submit"] {
+        background-color: #000;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .cta button[type="submit"]:hover {
+        background-color: #000;
+      }
+
+    #bt{
+        background: transparent;
+        border: none;
+        color: #fff;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], select {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 70%;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    input[type="date"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 70%;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+        background-color: #000;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #000;
+    }
+
+    #booking-form{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #btn{
+        color: #fff;
+        background: #000;
+        padding: 10px 20px;
+        border-radius: 25px;
+    }
+</style>
+<body>
+	<div class="header">
+        <h1>Welcome to The Career Company</h1>
+    </div>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="candi.html">Join us as candidate</a>
+        <a href="login.html">Join us as Mentor</a>
+        <a href="mentor-profile.html">Find Mentors</a>
+        <a href="#">About Us</a>
+    </nav>
+	<main>
+		<form id="booking-form">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name"><br><br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"><br><br>
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone"><br><br>
+			
+			<label for="date">Date:</label>
+			<input type="date" id="date" name="date"><br><br>
+			<label for="time">Time:</label>
+			<select id="time" name="time">
+				<option value="9:00am">9:00am</option>
+				<option value="9:30am">9:30am</option>
+				<option value="10:00am">10:00am</option>
+				<option value="10:30am">10:30am</option>
+				<option value="11:00am">11:00am</option>
+				<option value="11:30am">11:30am</option>
+				<option value="12:00pm">12:00pm</option>
+				<option value="12:30pm">12:30pm</option>
+				<option value="1:00pm">1:00pm</option>
+				<option value="1:30pm">1:30pm</option>
+				<option value="2:00pm">2:00pm</option>
+				<option value="2:30pm">2:30pm</option>
+				<option value="3:00pm">3:00pm</option>
+				<option value="3:30pm">3:30pm</option>
+				<option value="4:00pm">4:00pm</option>
+				<option value="4:30pm">4:30pm</option>
+				<option value="5:00pm">5:00pm</option>
+			</select>
+		</form>
+        <a href="succ.html"><button id="btn">Book</Button></a>
+	</main>
+    <div class="footer">
+        <p>| Find Mentors | Build Resume | Find Yourself | Find Courses 
+            |<br>| About Us | Privacy Policy | Current Openings|</p>
+            <section id="icon">
+                <h3>Follow us:</h2>
+                <ul class="social-media-list">
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+                </ul>
+            </section>
+    </div>
+</body>
+</html>
